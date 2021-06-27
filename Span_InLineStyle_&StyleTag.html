@@ -1,0 +1,28 @@
+{% extends "index.html" %}
+<!--the block can be named anything -- as long as block is the first word--> 
+
+{% block title %}Hello Home{% endblock %}
+
+{% block body %}
+    <body class="bg-warning">
+{% endblock %}
+
+{% block content %}
+    <div>
+        <h1>Welcome to RPS!</h1>
+        <p class="text-center">The rules are simple. First to 3, wins!</p>
+
+        <div class="row justify-content-center">
+            <a class="btn btn-primary btn-outline-dark btn-lg btn-default" style="background-color:tomato; color: white;" href="/" role="button">Play</a>
+        </div>
+        <br>
+        <p id="cd">Hi there<span style="background-color: chartreuse;">person</span> </p>
+    </div>
+
+    <style>
+        #cd{
+            color: crimson;
+            background-color: darkblue;
+        }
+    </style>
+{% endblock %}
